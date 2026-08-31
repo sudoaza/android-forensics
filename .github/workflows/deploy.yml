@@ -1,0 +1,47 @@
+name: deploy
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+# Never run two deploys at once: the live URL is the tool examiners load.
+concurrency:
+    group: pages
+    cancel-in-progress: false
+
+jobs:
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+
+            - uses: actions/setup-node@v5
+              with:
+                  node-version: "22"
+                  cache: npm
+
+            - run: npm ci
+
+            # Verification gates the deploy: a build that fails typecheck or
+            # tests must never reach the URL used for real acquisitions.
+            - run: npm run typecheck
+            - run: npm test
+            - run: npm run build
+
+            - uses: actions/configure-pages@v5
+
+            - uses: actions/upload-pages-artifact@v4
+              with:
+                  path: web/dist
+
+            - id: deployment
+              uses: actions/deploy-pages@v4

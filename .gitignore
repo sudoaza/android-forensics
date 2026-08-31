@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Never commit real acquisitions
+acquisitions/
+*.acquisition.zip
+fixtures/**/*.zip
