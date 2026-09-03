@@ -52,6 +52,15 @@ export interface AcquisitionProgress {
     readonly verifiedBytes: number;
     readonly artifactCount: number;
     readonly errorCount: number;
+    /**
+     * Epoch milliseconds when the run began, so the UI can show elapsed time.
+     *
+     * Elapsed time only; no completion estimate is offered. Artifact volume and
+     * per-command latency vary by more than an order of magnitude across devices
+     * — a 443-package inventory and a 101 MB logcat were both observed on one
+     * phone — so any "time remaining" would be misleading precision.
+     */
+    readonly startedAtMs: number;
 }
 
 export type ProgressListener = (progress: AcquisitionProgress) => void;
@@ -85,6 +94,7 @@ export class AcquisitionEngine {
     #transferredBytes = 0;
     #abortReason: string | undefined;
     #startedAt: string | undefined;
+    #startedAtMs = Date.now();
     #clockStart: ClockCorrelation | undefined;
 
     constructor(options: AcquisitionOptions) {
@@ -117,6 +127,7 @@ export class AcquisitionEngine {
             verifiedBytes: this.#store?.verifiedBytes ?? 0,
             artifactCount: this.#store?.records.length ?? 0,
             errorCount: this.#reports.reduce((sum, report) => sum + report.errors.length, 0),
+            startedAtMs: this.#startedAtMs,
         };
     }
 
@@ -171,6 +182,7 @@ export class AcquisitionEngine {
         const { client, device, profile } = this.#options;
         const startedAt = new Date().toISOString();
         this.#startedAt = startedAt;
+        this.#startedAtMs = Date.now();
 
         const store = await EvidenceStore.open(this.acquisitionId);
         this.#store = store;
@@ -467,6 +479,7 @@ export class AcquisitionEngine {
             async streamToArtifact(
                 command: readonly string[],
                 artifactName: string,
+                options?: { maxBytes?: number },
             ): Promise<ArtifactRecord> {
                 signal.throwIfAborted();
                 const startedAt = new Date().toISOString();
@@ -478,6 +491,7 @@ export class AcquisitionEngine {
                 try {
                     record = await store.writeStream(artifactName, stream.stdout, {
                         signal,
+                        ...(options?.maxBytes === undefined ? {} : { maxBytes: options.maxBytes }),
                         onProgress: (bytes) => {
                             engine.#setModuleState(
                                 moduleId,
@@ -535,6 +549,10 @@ export class AcquisitionEngine {
                     startedMs,
                     record,
                     record.size,
+                    // A capped transfer cancels the device stream, so a non-zero
+                    // exit here reports our own cancellation rather than a device
+                    // fault. The cap itself is recorded on the artifact.
+                    record.truncated,
                 );
 
                 return record;

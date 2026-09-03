@@ -99,6 +99,24 @@ describe("planArchive", () => {
 
         expect(plan.totalBytes).toBe(350);
     });
+
+    it("nests entries under the acquisition directory", () => {
+        // Required for MVT compatibility: its modules select files with fnmatch
+        // patterns like `*/getprop.txt`, where `*` also spans `/`. A flat archive
+        // matches none of them, so every module silently finds nothing.
+        const plan = planArchive("AQ-3", [record("getprop.txt", "a")]);
+
+        expect(plan.prefix).toBe("AQ-3/");
+    });
+
+    it("keeps hashes.csv paths relative to the acquisition directory", () => {
+        // AndroidQF's semantics, and what makes `sha256sum -c` work when run from
+        // inside the extracted directory. Prefixing these would break both.
+        const plan = planArchive("AQ-4", [record("security/appops.txt", "aa")]);
+
+        expect(plan.hashesCsv).toContain('aa,"security/appops.txt"');
+        expect(plan.hashesCsv).not.toContain("AQ-4/");
+    });
 });
 
 describe("CommandLog", () => {

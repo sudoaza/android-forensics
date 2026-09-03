@@ -17,6 +17,8 @@ export interface CommandArtifactSpec {
     readonly artifact: string;
     /** Stream instead of buffering, for unbounded output. */
     readonly stream?: boolean;
+    /** Caps a streamed artifact, marking it truncated rather than failing. */
+    readonly maxBytes?: number;
     readonly supports?: (device: DeviceContext) => boolean;
 }
 
@@ -29,7 +31,11 @@ export function commandArtifact(spec: CommandArtifactSpec): AcquisitionModule {
             const result = new ResultBuilder();
             try {
                 if (spec.stream === true) {
-                    await ctx.streamToArtifact(spec.command, spec.artifact);
+                    await ctx.streamToArtifact(
+                        spec.command,
+                        spec.artifact,
+                        spec.maxBytes === undefined ? undefined : { maxBytes: spec.maxBytes },
+                    );
                 } else {
                     await ctx.runToArtifact(spec.command, spec.artifact);
                 }
@@ -50,6 +56,8 @@ export interface CommandGroupSpec {
         readonly command: readonly string[];
         readonly artifact: string;
         readonly stream?: boolean;
+        /** Caps a streamed artifact, marking it truncated rather than failing. */
+        readonly maxBytes?: number;
         /**
          * Marks a probe whose failure is a normal device condition rather than a
          * collection fault, so it is not counted as unexpected. Used for
@@ -80,7 +88,11 @@ export function commandGroup(spec: CommandGroupSpec): AcquisitionModule {
 
                 try {
                     if (item.stream === true) {
-                        await ctx.streamToArtifact(item.command, item.artifact);
+                        await ctx.streamToArtifact(
+                            item.command,
+                            item.artifact,
+                            item.maxBytes === undefined ? undefined : { maxBytes: item.maxBytes },
+                        );
                     } else {
                         await ctx.runToArtifact(item.command, item.artifact);
                     }

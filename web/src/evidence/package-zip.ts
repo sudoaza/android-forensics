@@ -40,6 +40,20 @@ export interface ArchivePlan {
     readonly entries: readonly ArtifactRecord[];
     readonly hashesCsv: string;
     readonly totalBytes: number;
+    /**
+     * Directory every entry is nested under, with a trailing slash.
+     *
+     * Not cosmetic. MVT selects acquisition files with `fnmatch` patterns such as
+     * `*​/getprop.txt`, and in `fnmatch` a `*` also matches `/`, so the pattern
+     * requires at least one directory component. A flat archive matches none of
+     * them and every MVT module silently finds nothing — which is what a flat
+     * layout did here before. AndroidQF nests under one directory for the same
+     * reason.
+     *
+     * Paths inside `hashes.csv` stay relative to this directory, matching
+     * AndroidQF, so `sha256sum -c` works when run from the extracted directory.
+     */
+    readonly prefix: string;
 }
 
 export function planArchive(
@@ -54,6 +68,7 @@ export function planArchive(
         entries,
         hashesCsv,
         totalBytes: entries.reduce((sum, entry) => sum + entry.size, 0),
+        prefix: `${acquisitionId}/`,
     };
 }
 
@@ -68,7 +83,9 @@ async function* archiveEntries(
         onEntry?.(record.name, index, total);
         const file = await store.openFile(record.name);
         yield {
-            name: record.name,
+            // Prefixed on the way into the archive; the store's own name and the
+            // path recorded in `hashes.csv` both stay relative.
+            name: `${plan.prefix}${record.name}`,
             input: file.stream() as ReadableStream<Uint8Array>,
             lastModified: new Date(record.acquiredAt),
         };
@@ -77,7 +94,7 @@ async function* archiveEntries(
     // Last, so it can cover every preceding entry without covering itself.
     onEntry?.(HASHES_FILENAME, total - 1, total);
     yield {
-        name: HASHES_FILENAME,
+        name: `${plan.prefix}${HASHES_FILENAME}`,
         input: plan.hashesCsv,
         lastModified: new Date(),
     };
@@ -110,6 +127,7 @@ export async function exportArchive(
     store: EvidenceStore,
     plan: ArchivePlan,
     onEntry?: (name: string, index: number, total: number) => void,
+    onBytes?: (bytes: number) => void,
 ): Promise<{ method: "stream-to-disk" | "blob-download" }> {
     const picker = (globalThis as { showSaveFilePicker?: SaveFilePicker }).showSaveFilePicker;
 
@@ -119,13 +137,24 @@ export async function exportArchive(
             types: [{ description: "Acquisition archive", accept: { "application/zip": [".zip"] } }],
         });
         const writable = await handle.createWritable();
-        await archiveStream(store, plan, onEntry).pipeTo(
-            writable as unknown as WritableStream<Uint8Array>,
-        );
+        // Counting here rather than inside `archiveEntries`: a single artifact can
+        // be most of the archive (a 101 MB logcat was observed), so per-entry
+        // progress alone leaves the UI apparently stalled for the bulk of the run.
+        let bytes = 0;
+        const counter = new TransformStream<Uint8Array, Uint8Array>({
+            transform(chunk, controller) {
+                controller.enqueue(chunk);
+                bytes += chunk.byteLength;
+                onBytes?.(bytes);
+            },
+        });
+        await archiveStream(store, plan, onEntry)
+            .pipeThrough(counter)
+            .pipeTo(writable as unknown as WritableStream<Uint8Array>);
         return { method: "stream-to-disk" };
     }
 
-    const blob = await collectBlob(archiveStream(store, plan, onEntry));
+    const blob = await collectBlob(archiveStream(store, plan, onEntry), onBytes);
     const url = URL.createObjectURL(blob);
     try {
         const anchor = document.createElement("a");
@@ -149,9 +178,13 @@ export async function exportArchive(
  * to disk-backed storage instead, which is what makes a multi-hundred-megabyte
  * export survive the fallback path.
  */
-async function collectBlob(stream: ReadableStream<Uint8Array>): Promise<Blob> {
+async function collectBlob(
+    stream: ReadableStream<Uint8Array>,
+    onBytes?: (bytes: number) => void,
+): Promise<Blob> {
     const chunks: Uint8Array[] = [];
     const reader = stream.getReader();
+    let bytes = 0;
     try {
         for (;;) {
             const { done, value } = await reader.read();
@@ -159,6 +192,8 @@ async function collectBlob(stream: ReadableStream<Uint8Array>): Promise<Blob> {
                 break;
             }
             chunks.push(value);
+            bytes += value.byteLength;
+            onBytes?.(bytes);
         }
     } finally {
         reader.releaseLock();

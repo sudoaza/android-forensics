@@ -19,12 +19,13 @@ import {
     dumpsysServicesModule,
     getpropModule,
     logcatModule,
+    logcatTailModule,
     processesModule,
     servicesModule,
     settingsModule,
 } from "../modules/system.js";
 
-export type ProfileId = "quick" | "standard" | "full";
+export type ProfileId = "connection-test" | "quick" | "standard" | "full";
 
 export interface Profile {
     readonly id: ProfileId;
@@ -43,6 +44,25 @@ export interface Profile {
  * No runtime estimates are shown anywhere: APK volume and bugreport generation
  * time vary by more than an order of magnitude across devices.
  */
+
+/**
+ * Proves the transport works and captures the device's identity, without
+ * transferring anything large.
+ *
+ * Every artifact here is a small text dump; nothing unbounded is collected, and
+ * the one potentially large source (logcat) is both tail-limited and byte-capped.
+ * Intended to confirm a cable, a driver, an ADB authorization and the evidence
+ * pipeline end to end in well under a minute, before committing to a real
+ * acquisition. The output is still a complete, verified, MVT-shaped archive.
+ */
+const CONNECTION_TEST_MODULES: readonly AcquisitionModule[] = [
+    getpropModule,
+    bootStateModule,
+    settingsModule,
+    servicesModule,
+    dumpsysServicesModule,
+    logcatTailModule,
+];
 
 const QUICK_MODULES: readonly AcquisitionModule[] = [
     getpropModule,
@@ -105,6 +125,15 @@ const FULL_MODULES: readonly AcquisitionModule[] = [
 ];
 
 export const PROFILES: Readonly<Record<ProfileId, Profile>> = {
+    "connection-test": {
+        id: "connection-test",
+        label: "Connection test",
+        description:
+            "Versions, configuration and boot state only, plus a short capped logcat " +
+            "tail. Nothing large is transferred. Use it to confirm the cable, the ADB " +
+            "authorization and the evidence pipeline before a real acquisition.",
+        modules: CONNECTION_TEST_MODULES,
+    },
     quick: {
         id: "quick",
         label: "Quick triage",

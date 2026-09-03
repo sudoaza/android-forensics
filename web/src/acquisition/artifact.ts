@@ -65,10 +65,17 @@ export interface AcquisitionContext {
      */
     run(command: readonly string[], options?: { tolerateFailure?: boolean }): Promise<CommandResult>;
 
-    /** Streams stdout straight into the evidence store without buffering. */
+    /**
+     * Streams stdout straight into the evidence store without buffering.
+     *
+     * `maxBytes` caps the stored size, marking the artifact truncated instead of
+     * failing it. Used by the connection-test profile to keep unbounded sources
+     * like logcat bounded.
+     */
     streamToArtifact(
         command: readonly string[],
         artifactName: string,
+        options?: { maxBytes?: number },
     ): Promise<ArtifactRecord>;
 
     /** Pulls a device file into the store over the ADB sync service. */

@@ -35,6 +35,12 @@ jobs:
             # tests must never reach the URL used for real acquisitions.
             - run: npm run typecheck
             - run: npm test
+
+            # The pinned indicator snapshot is re-hashed against its own index.
+            # A snapshot that has drifted would silently change what the deployed
+            # tool detects, so it fails the deploy rather than shipping.
+            - run: npm run indicators:verify
+
             - run: npm run build
 
             - uses: actions/configure-pages@v5

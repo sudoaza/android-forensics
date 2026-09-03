@@ -1,0 +1,232 @@
+{
+    "type": "bundle",
+    "id": "bundle--795f880a-02b3-5db2-b8e5-2ae2516bcca9",
+    "objects": [
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "name": "Spyrtacus",
+            "description": "IOCs for Spyrtacus",
+            "is_family": false
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2ef3eb69-96cd-5eea-b213-961461c394dc",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='srv.servicemnt.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--784105c5-f659-52c6-8a99-5214f0bfb571",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2ef3eb69-96cd-5eea-b213-961461c394dc",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e15f7b04-15ed-5e35-9a21-c77a8dc2c9f7",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='supporto-mobile.it']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--18d46a45-e66c-50b3-a079-1f06d113b002",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e15f7b04-15ed-5e35-9a21-c77a8dc2c9f7",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9efec50b-5644-5897-a0a1-a9f0ed7eaa48",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='5.56.12.150']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0b4154f9-cea1-5bbd-8e8b-9d7676935249",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9efec50b-5644-5897-a0a1-a9f0ed7eaa48",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1811d40f-1e45-5fee-8871-170caabdaa5b",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='89.46.67.218']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3bb7c15c-576f-5522-b597-5f92dca13221",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1811d40f-1e45-5fee-8871-170caabdaa5b",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a54cf75b-cd42-5fb2-ae17-e24bde798e37",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ef2e1c47166fe0c5ab3bf5216baf6ad6b96f759e15ac218d1a1a3cdcc9e0994f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bd6d6e9d-0271-501d-bdb2-713f1093a3a2",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a54cf75b-cd42-5fb2-ae17-e24bde798e37",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--97439c37-c464-5994-a0f0-d5b120e694f1",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[app:id='com.elysium.core']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c3f305e2-fe83-5849-9e85-c4657dde37b7",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--97439c37-c464-5994-a0f0-d5b120e694f1",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2a6c9316-41dd-5899-95e6-6dd55a16e924",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[app:id='it.taog']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--36847e30-b174-576b-92b6-32425be37e0f",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2a6c9316-41dd-5899-95e6-6dd55a16e924",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a012da4e-2586-56a1-b3ce-3b51064785c2",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[app:id='org.util.carriersvc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dbb45969-5198-525e-a1d2-fb2997762c2d",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a012da4e-2586-56a1-b3ce-3b51064785c2",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1f6033a3-08fd-5eca-a537-d8dc2a455677",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[app:id='sys.base.service']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-04-09T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b0aabe71-2843-5f41-ad9b-1bdaa87dee50",
+            "created": "2026-04-09T00:00:00.000Z",
+            "modified": "2026-04-09T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1f6033a3-08fd-5eca-a537-d8dc2a455677",
+            "target_ref": "malware--3ea909dc-8ef1-5c82-92ce-ba138072cdd2"
+        }
+    ]
+}

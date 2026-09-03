@@ -259,6 +259,17 @@ button.danger {
     color: var(--warn);
 }
 
+/* Distinct from `failed`: nothing went wrong, there was simply nothing to
+   read. Rendering it as an error would overstate it, and as a success would
+   understate it. */
+.module.not-applicable {
+    color: var(--text-faint);
+}
+
+.module.not-applicable .glyph {
+    color: var(--text-faint);
+}
+
 .module.failed .glyph {
     color: var(--error);
 }
@@ -294,6 +305,30 @@ button.danger {
     height: 100%;
     background: var(--accent);
     transition: width 200ms ease;
+}
+
+.meter.large {
+    height: 6px;
+    margin-top: 0;
+    display: block;
+}
+
+.overall {
+    margin-bottom: 20px;
+}
+
+.overall-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+/* Tabular figures stop the elapsed clock from shifting width each second. */
+.overall-head .muted {
+    font-variant-numeric: tabular-nums;
 }
 
 .totals {
@@ -424,4 +459,143 @@ code {
 .muted {
     color: var(--text-faint);
     font-size: 12.5px;
+}
+
+/* Analysis findings.
+   Severity is conveyed by a left border rather than a fill, so a report full of
+   findings stays readable and no single alert dominates by colour alone. */
+
+.severity-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.severity-summary .pill {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.severity-summary .pill.selected {
+    border-color: var(--accent);
+}
+
+.alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+}
+
+.alert {
+    border: 1px solid var(--border);
+    border-left-width: 3px;
+    border-radius: 6px;
+    background: var(--bg);
+}
+
+.alert.critical {
+    border-left-color: var(--error);
+}
+
+.alert.high {
+    border-left-color: var(--error);
+}
+
+.alert.medium {
+    border-left-color: var(--warn);
+}
+
+.alert.low {
+    border-left-color: var(--warn);
+}
+
+.alert.informational {
+    border-left-color: var(--border-strong);
+}
+
+.alert-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 11px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.alert-head:hover {
+    background: var(--accent-dim);
+}
+
+.alert-message {
+    overflow-wrap: anywhere;
+}
+
+.alert-head .count {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.alert-detail {
+    border-top: 1px solid var(--border);
+    padding: 4px 11px 11px;
+}
+
+.evidence {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    background: var(--bg-raised, var(--bg));
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 9px;
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.rule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 14px;
+    font-size: 13px;
+}
+
+.rule {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    align-items: baseline;
+    gap: 10px;
+    padding: 7px 8px;
+    border-radius: 6px;
+}
+
+/* A rule that fired is highlighted so it can be found in a long inventory
+   without reading every row. */
+.rule.fired {
+    background: var(--accent-dim);
+}
+
+.rule .detail {
+    display: block;
+    font-size: 11.5px;
+    color: var(--text-muted);
+    margin-top: 3px;
+    overflow-wrap: anywhere;
+}
+
+.rule .count {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.notice.ok {
+    border-color: var(--ok);
+    color: var(--text);
 }

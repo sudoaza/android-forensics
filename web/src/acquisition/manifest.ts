@@ -131,6 +131,13 @@ export function buildManifest(summary: AcquisitionSummary): string {
             total_bytes: summary.artifacts.reduce((sum, artifact) => sum + artifact.size, 0),
             all_verified: summary.artifacts.every((artifact) => artifact.verified),
             /**
+             * Artifacts a size cap stopped early. Surfaced at the top level so
+             * incompleteness is visible without reading every hash entry.
+             */
+            truncated: summary.artifacts
+                .filter((artifact) => artifact.truncated === true)
+                .map((artifact) => ({ name: artifact.name, capped_at_bytes: artifact.truncatedAt })),
+            /**
              * A manifest cannot describe itself. These entries are written after
              * this file and so are absent from the counts above, while being
              * present in `hashes.csv`. Stated explicitly so the difference is
@@ -172,6 +179,12 @@ export function buildHashManifest(artifacts: readonly ArtifactRecord[]): string 
                 size: artifact.size,
                 acquired_at: artifact.acquiredAt,
                 verified: artifact.verified,
+                // Only present when a cap stopped the transfer. The digest still
+                // covers the stored bytes exactly, but they are not the whole
+                // source, and an analyst must be able to see that.
+                ...(artifact.truncated === true
+                    ? { truncated: true, truncated_at_bytes: artifact.truncatedAt }
+                    : {}),
             },
         ]),
     );

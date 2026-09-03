@@ -28,6 +28,16 @@ export interface ArtifactRecord {
     readonly verified: boolean;
     /** Set when the write and verification hashes disagree. */
     readonly verificationError?: string;
+    /**
+     * Set when a size cap stopped the transfer before the source ended.
+     *
+     * The artifact is still internally consistent — `sha256` covers exactly the
+     * bytes stored — but it is not the whole source. This must be recorded, since
+     * an analyst cannot otherwise distinguish a capped log from a short one.
+     */
+    readonly truncated?: true;
+    /** The cap that was applied, in bytes. Only set when `truncated`. */
+    readonly truncatedAt?: number;
 }
 
 const ROOT_DIRECTORY = "acquisitions";
@@ -120,7 +130,15 @@ export class EvidenceStore {
     async writeStream(
         name: string,
         source: ReadableStream<Uint8Array>,
-        options?: { signal?: AbortSignal; onProgress?: (bytes: number) => void },
+        options?: {
+            signal?: AbortSignal;
+            onProgress?: (bytes: number) => void;
+            /**
+             * Stops the transfer once this many bytes have been stored, marking
+             * the artifact truncated rather than failing it.
+             */
+            maxBytes?: number;
+        },
     ): Promise<ArtifactRecord> {
         const acquiredAt = new Date().toISOString();
         const hashing = hashingStream();
@@ -132,6 +150,7 @@ export class EvidenceStore {
         let piped: ReadableStream<Uint8Array> | undefined;
         let parent: FileSystemDirectoryHandle | undefined;
         let filename: string | undefined;
+        let truncated: number | undefined;
 
         try {
             const split = splitPath(name);
@@ -144,6 +163,35 @@ export class EvidenceStore {
             const writable = await fileHandle.createWritable();
 
             piped = source.pipeThrough(hashing.stream);
+
+            const maxBytes = options?.maxBytes;
+            if (maxBytes !== undefined) {
+                // Placed after the hashing transform so the digest covers exactly
+                // the bytes that reach the file, keeping the re-read
+                // verification meaningful for a capped artifact.
+                let stored = 0;
+                piped = piped.pipeThrough(
+                    new TransformStream<Uint8Array, Uint8Array>({
+                        transform(chunk, controller) {
+                            const remaining = maxBytes - stored;
+                            if (remaining <= 0) {
+                                return;
+                            }
+                            if (chunk.byteLength <= remaining) {
+                                stored += chunk.byteLength;
+                                controller.enqueue(chunk);
+                                return;
+                            }
+                            // Store the partial chunk so the cap is exact rather
+                            // than rounded to a chunk boundary.
+                            stored += remaining;
+                            truncated = maxBytes;
+                            controller.enqueue(chunk.subarray(0, remaining));
+                            controller.terminate();
+                        },
+                    }),
+                );
+            }
 
             if (options?.onProgress !== undefined) {
                 const onProgress = options.onProgress;
@@ -173,9 +221,21 @@ export class EvidenceStore {
             throw error;
         }
 
+        if (truncated !== undefined) {
+            // `terminate()` ends the pipe but leaves the device still producing,
+            // so the source must be released explicitly or the transport stalls.
+            await source.cancel().catch(() => undefined);
+        }
+
         const written = hashing.result();
         const fileHandle = await parent.getFileHandle(filename);
-        const record = await this.#verify(name, fileHandle, written, acquiredAt);
+        const record = await this.#verify(
+            name,
+            fileHandle,
+            written,
+            acquiredAt,
+            truncated === undefined ? undefined : { truncated: true, truncatedAt: truncated },
+        );
 
         if (!record.verified) {
             await this.#discardArtifact(name, parent, filename);
@@ -233,6 +293,7 @@ export class EvidenceStore {
         fileHandle: FileSystemFileHandle,
         written: { sha256: string; size: number },
         acquiredAt: string,
+        extra?: { truncated?: true; truncatedAt?: number },
     ): Promise<ArtifactRecord> {
         const file = await fileHandle.getFile();
         const reread = await hashStream(file.stream() as ReadableStream<Uint8Array>);
@@ -247,6 +308,7 @@ export class EvidenceStore {
                 verificationError:
                     `Verification failed for ${name}: wrote ${written.size} bytes ` +
                     `(${written.sha256}) but re-read ${reread.size} bytes (${reread.sha256}).`,
+                ...extra,
             };
         }
 
@@ -256,6 +318,7 @@ export class EvidenceStore {
             size: written.size,
             acquiredAt,
             verified: true,
+            ...extra,
         };
     }
 

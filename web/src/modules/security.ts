@@ -95,6 +95,8 @@ export const bootStateModule: AcquisitionModule = commandGroup({
         { command: ["mount"], artifact: "security/mounts.txt" },
         { command: ["cat", "/proc/mounts"], artifact: "security/proc_mounts.txt" },
         { command: ["cat", "/proc/version"], artifact: "security/proc_version.txt" },
-        { command: ["cat", "/proc/cmdline"], artifact: "security/proc_cmdline.txt" },
+        // Denied to the shell user on production builds (observed on MIUI), which
+        // is a device condition rather than a collection fault.
+        { command: ["cat", "/proc/cmdline"], artifact: "security/proc_cmdline.txt", optional: true },
     ],
 });

@@ -23,3 +23,9 @@
 # that no longer match the manifest it writes.
 /index.html
   Cache-Control: no-cache, must-revalidate
+
+# Indicator bundles are content-verified against index.json but their paths are
+# NOT fingerprinted, so re-pinning reuses them. They must revalidate, or a cached
+# bundle would be refused as a hash mismatch against a freshly fetched index.
+/indicators/*
+  Cache-Control: no-cache, must-revalidate

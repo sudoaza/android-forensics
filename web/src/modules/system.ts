@@ -107,3 +107,25 @@ export const dumpsysServicesModule: AcquisitionModule = commandArtifact({
     artifact: "dumpsys_services.txt",
     supports: (device) => device.capabilities.dumpsys,
 });
+
+/**
+ * A deliberately bounded logcat tail, for the connection-test profile.
+ *
+ * The uncapped dump reached 101 MB on a real MIUI device. `-t` asks the device
+ * for the most recent lines rather than the whole buffer, and the byte cap is a
+ * backstop for builds that ignore or mishandle it. Any truncation is recorded on
+ * the artifact, so a capped log is never mistaken for a complete one.
+ */
+export const logcatTailModule: AcquisitionModule = commandGroup({
+    id: "logcat-tail",
+    label: "Recent logcat",
+    items: [
+        { command: ["logcat", "-g", "-b", "all"], artifact: "logcat_buffers.txt" },
+        {
+            command: ["logcat", "-d", "-t", "2000", "-b", "main,system,crash", "*:W"],
+            artifact: "logcat.txt",
+            stream: true,
+            maxBytes: 2 * 1024 * 1024,
+        },
+    ],
+});
