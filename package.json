@@ -1,0 +1,21 @@
+{
+  "name": "webadb-forensics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Zero-install Android forensic acquisition and analysis in the browser (Chromium + WebUSB + ADB)",
+  "workspaces": [
+    "web"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "indicators:pin": "node tools/pin-indicators.mjs",
+    "indicators:verify": "node tools/pin-indicators.mjs --verify"
+  }
+}

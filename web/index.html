@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Android Forensic Acquisition</title>
+
+        <!--
+            Static hosting (GitHub Pages) cannot set response headers, so the policy is
+            delivered via meta. Note the documented gap: frame-ancestors, X-Frame-Options,
+            X-Content-Type-Options and Referrer-Policy are header-only and are IGNORED here.
+            When hosting behind a controlled origin, serve headers/_headers instead.
+        -->
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+                default-src 'none';
+                script-src 'self';
+                style-src 'self' 'unsafe-inline';
+                img-src 'self' data:;
+                font-src 'self';
+                connect-src 'self';
+                worker-src 'self' blob:;
+                manifest-src 'self';
+                base-uri 'none';
+                form-action 'none';
+            "
+        />
+        <meta name="referrer" content="no-referrer" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

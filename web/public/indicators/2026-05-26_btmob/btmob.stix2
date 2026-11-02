@@ -1,0 +1,3904 @@
+{
+    "type": "bundle",
+    "id": "bundle--a0c44f6d-eb9c-5468-986e-7da46e801a2b",
+    "objects": [
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "name": "BTMOB",
+            "description": "IOCs for BTMOB",
+            "is_family": false
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c696f436-099e-5c5a-a40f-05ec15e28a70",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='afip-aviso-wbe.kesug.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3497f6fd-3cf4-59ee-bc20-08eed1c9a2d7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c696f436-099e-5c5a-a40f-05ec15e28a70",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4b371153-68ff-5430-9fd8-9a8578bd8b56",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='arbsniper.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ba1b8888-53d7-550a-a8e7-4df709255fee",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4b371153-68ff-5430-9fd8-9a8578bd8b56",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c1cd6109-94da-5f47-a957-e6a5317eedc9",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='brazilmob.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--144cc505-1938-5d1f-93e7-a4aea202c217",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c1cd6109-94da-5f47-a957-e6a5317eedc9",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--68c613cb-e3b2-578e-8ce3-02e78eaf76f5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='e-ifade.xyz']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9b4c1bdb-2397-59b6-ad20-4f16fa6509a7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--68c613cb-e3b2-578e-8ce3-02e78eaf76f5",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6bdb8302-f8b1-56d0-8487-f87fda31ba0e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='navegador-update.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--08ef459c-ac5b-55d8-8269-d80c9393ed71",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6bdb8302-f8b1-56d0-8487-f87fda31ba0e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e4fc34a4-78f6-5813-bf9f-6b64ea0f8d76",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='padariadojoao.shop']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5c362a09-b574-568f-86bb-323d806d2365",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e4fc34a4-78f6-5813-bf9f-6b64ea0f8d76",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--17810077-908b-5e74-836e-674a15853093",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='spainmob.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--af6a096b-2d75-52db-a978-192ef596c289",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--17810077-908b-5e74-836e-674a15853093",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cf6fe444-5dfe-5515-ac18-b5f19bea2b4e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value='venmosupport.live']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f99c1efa-5147-5442-903c-70bf2de619c7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cf6fe444-5dfe-5515-ac18-b5f19bea2b4e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--298d44d8-7783-5236-98b4-b4790ecf3678",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='104.21.64.137']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--042688cc-51fc-54c7-9830-9ae96532500b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--298d44d8-7783-5236-98b4-b4790ecf3678",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ca8421d2-c537-5c93-9d24-2a6344e32560",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='142.251.183.138']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--73240b6d-a62c-5509-902f-ad9912fb1625",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ca8421d2-c537-5c93-9d24-2a6344e32560",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5f894b23-ba33-533d-8340-1040e2993dca",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='173.194.193.138']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa20651e-dac7-56d8-a349-e58fe33c3c3e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5f894b23-ba33-533d-8340-1040e2993dca",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2b1f2d1b-95e0-5cde-a067-88eb4a679d1a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='173.194.194.94']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2157ccad-34bb-57da-a7a8-82ca3688bd7f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2b1f2d1b-95e0-5cde-a067-88eb4a679d1a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9f17b50d-f958-5209-8751-1405913884fb",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='173.194.206.106']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f783238a-9e78-577c-9bf1-0eb3b7f67263",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9f17b50d-f958-5209-8751-1405913884fb",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c62ca6e9-c530-5d25-92ca-8d135133df8a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='178.156.177.192']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e8a94efd-69c7-541a-8e7c-ce26e0af88bc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c62ca6e9-c530-5d25-92ca-8d135133df8a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d7cf906c-9e53-5bab-9613-dec243910c9b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.101.131.250']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--63b5d23d-d15b-5482-baa2-53c0aa84e451",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d7cf906c-9e53-5bab-9613-dec243910c9b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8d7858fd-41af-52af-8b25-390cca1083c2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.224.87']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f97f400d-a0a6-504d-8b4c-7c8322159597",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8d7858fd-41af-52af-8b25-390cca1083c2",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c6b595a5-1eb5-5b71-895e-a87a392849b4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.225.241']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4ef65cbf-3d90-5dd5-9748-314d7c282055",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c6b595a5-1eb5-5b71-895e-a87a392849b4",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d927609e-6d41-5809-8ec6-ef6c8c4bd14d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.78.172']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8dab446d-15a3-5d15-b21f-bb48db82107f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d927609e-6d41-5809-8ec6-ef6c8c4bd14d",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--930a0b6c-16e0-5b63-bb17-d6fcc1df32e2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.78.28']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b2b9bcbe-17b6-52b7-baac-d652a93b1a11",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--930a0b6c-16e0-5b63-bb17-d6fcc1df32e2",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--301d0caa-2777-57d3-b286-4a75927979df",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.79.133']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--249f5d9d-cbba-5746-ae60-a67214d2a030",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--301d0caa-2777-57d3-b286-4a75927979df",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9de353d1-496b-57ff-9a24-56b222c1a940",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.79.179']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--db701562-acf2-51d4-89eb-e3691053f0fc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9de353d1-496b-57ff-9a24-56b222c1a940",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e5288518-8cf9-5d4b-b905-9bda54739ca2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='191.96.79.41']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bbae580e-d8fa-53b1-9eb6-d30d082b3d4c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e5288518-8cf9-5d4b-b905-9bda54739ca2",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d28e1287-e29e-5fe9-88b7-98ee61575067",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='192.178.209.95']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--746758c4-50f9-51b4-b10d-c6dd7d22a5bd",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d28e1287-e29e-5fe9-88b7-98ee61575067",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--252b389a-6bfa-5f41-9c68-457168e60b73",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='195.160.221.203']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2ac90ca0-092b-5b61-8896-c95c4eb70294",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--252b389a-6bfa-5f41-9c68-457168e60b73",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8f309d2a-0fed-5c19-a967-fb94060b313d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='200.9.155.153']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9595d760-deed-5f50-9a4c-d6548d5860dc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8f309d2a-0fed-5c19-a967-fb94060b313d",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--59f0d424-6f6c-5094-8b08-25f04327e9d1",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='206.206.125.203']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6474698e-31d2-5ccb-9169-3b5aeac457d2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--59f0d424-6f6c-5094-8b08-25f04327e9d1",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8e494252-968b-54b1-8645-3060a892160c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='212.224.88.213']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6259c2ad-2e64-5a89-834a-39af03367343",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8e494252-968b-54b1-8645-3060a892160c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4b0df0a8-5838-53f0-9802-60e827c328f3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='74.125.132.95']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--063c12c6-424d-51fd-b08c-143e4e8cab7e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4b0df0a8-5838-53f0-9802-60e827c328f3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fa23ac5c-dcb0-590c-ad1d-ca3abeeb6f7e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='74.125.202.103']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1a9f89d3-8ce5-537a-a30a-0cbc14e20cb2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fa23ac5c-dcb0-590c-ad1d-ca3abeeb6f7e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5489c70d-ec7d-58de-8318-feff5377f000",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='78.135.93.123']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f2ed1901-19c5-5980-92ff-0cad357ed577",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5489c70d-ec7d-58de-8318-feff5377f000",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--77b4d5b4-6794-567b-af4b-a678bcc01e69",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value='79.133.57.141']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ed3f1efd-86e2-53d9-8455-336dd54b44ea",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--77b4d5b4-6794-567b-af4b-a678bcc01e69",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e87c3cbf-940f-5f87-9cdb-75de5fbb3233",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='01ffd5d2a96c9585ff3e1b7850b39f1304f1dcd0156f07b7d446854473bb6e8f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c80af181-039f-5afa-8fce-975a9100767e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e87c3cbf-940f-5f87-9cdb-75de5fbb3233",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--54ab9d94-4719-5a18-8a23-803ce138da64",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='02a52c4cc11748d44c9b49d508ee4e46425661981fa1406f30ec0830cb69ddc5']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--625e810f-babc-5545-8c1e-6f86d085d02a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--54ab9d94-4719-5a18-8a23-803ce138da64",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0d124a4f-4a6d-58e2-8cf9-1586a453a5c7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='03c18eadd89efe3d666d28b005762a4d70df512ab6aaae84de5b687da9970757']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a8b09283-eb12-567f-843a-ea7eb290a5f8",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0d124a4f-4a6d-58e2-8cf9-1586a453a5c7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--73e8ff35-7245-5d95-a3d7-2bf362c26ff6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='0628ad6d1fd836b13b22e75fa169502d8ce78b7ad20f0261eb5151da98437bca']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a4e5328a-9834-53f8-bdec-2ff3745655b6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--73e8ff35-7245-5d95-a3d7-2bf362c26ff6",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d854c394-a44a-57ec-9c00-755d0f1dd9d0",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='074b746b6e436c8335463bc4c8fee3ed404cd4c5f936e4dd6db25e693faee1fb']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--66662a6e-516a-5711-bd4d-c741517dbe9c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d854c394-a44a-57ec-9c00-755d0f1dd9d0",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0e7b5fdc-0528-560e-a469-34108cc22b65",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='08f6c55dd50c9be03504c3c220728b9a141f711ff556191f2e35035caef7938d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5d35cd14-54a2-5c0d-94cf-b1db9b537941",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0e7b5fdc-0528-560e-a469-34108cc22b65",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fdc48349-958e-514f-a4b2-428650b18d1f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='0a108cca92abc4326b5897466ed7c8f7f8737d3aab14f59a8d1e5eb4a48167b9']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cc12e987-f775-5219-965d-4700058da9a2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fdc48349-958e-514f-a4b2-428650b18d1f",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--08a398b3-096d-50d8-9485-0438ad4b8c9e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='0a542751724a432a8448324613e0ce10393e41739a1800cbb7d5a2c648fcdc35']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b87f385b-797e-593e-b2e3-dd68180c4514",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--08a398b3-096d-50d8-9485-0438ad4b8c9e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ee94ebc1-c5c1-5a36-9f87-e29aff9756e2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='0cd476d9a82c73843be861fa38b3951b51a5b90d25f898b1dd4facf1f4a3450b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f5307ea5-39cc-5200-87b8-68ea92623b47",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ee94ebc1-c5c1-5a36-9f87-e29aff9756e2",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1badc1c0-1faa-51e8-a02a-a3396d56b3aa",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='0ec3a63b5d80572c9ff32e22e05509d8f8fdc72c25482024e0c47258ca109f4c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--45ecf175-0739-593a-80b4-83a0c7d60262",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1badc1c0-1faa-51e8-a02a-a3396d56b3aa",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a55f8e6a-219b-5f6c-8940-b59d31b37fc6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='12fa8fd5a26326041faf0629dda304f94256706f1a5acd85ba5f27a507668276']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3d839198-2d6c-5db0-85f5-2968b6fd3cc0",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a55f8e6a-219b-5f6c-8940-b59d31b37fc6",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--600538f8-5148-512c-bfee-9b49cc5df727",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='140a7f995b0336942691a2e93e2017fd575267c017c7d0728d69169306f91963']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7794acc0-37b8-567c-bc85-5df1cdbe47ca",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--600538f8-5148-512c-bfee-9b49cc5df727",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d2f91fa8-9b7f-5017-9cb1-6bf146c49255",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='168f50bf9a87099094ef410e3ac33e676a6a8740a5437cd09e7b63d73df8431a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--67550993-4c25-51a6-a9ad-5b429736f995",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d2f91fa8-9b7f-5017-9cb1-6bf146c49255",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5e27a2c5-9c72-51dc-958c-42db4391f95c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='17e811c8f9b74a40b782d46cec8f64026a4bf2d4edb126e5b3e28c87727aebae']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--edcffbd6-e4ba-52a7-8981-8590cce0863f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5e27a2c5-9c72-51dc-958c-42db4391f95c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--991962a6-1e95-595f-803c-527eec52d002",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='1a60cb5f7e2fb7c09fc3dc8459108b26ac98ee73131f37a28cfdad5fc75b7a7d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--38bfcbe6-f904-5dda-a643-419579a06116",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--991962a6-1e95-595f-803c-527eec52d002",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5b5d5fd2-9928-58c2-b5d8-5c3b9957712a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='1e2ef654b7760959476aa547157921e7b71ed50db50c70730298dabced72bc70']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b9e1ecb5-cf3d-5955-a34b-df9d42c69697",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5b5d5fd2-9928-58c2-b5d8-5c3b9957712a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4ed331cb-df57-5d68-94e2-82bd4f9944c2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='1f7cfea0802e5a75cf6b92117b09579a386e7002990b1198cce802657838fd7e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5bc40858-4e05-5d9b-a4b0-da18e5a29c9e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4ed331cb-df57-5d68-94e2-82bd4f9944c2",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--596945a2-069f-5365-ae3f-77af55519e02",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='225ac87bf3f5724ec1331a93c4e5a0292f78f8de20bfbad3ccf3ca5ff858e9b2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c9531c28-33c1-5759-8475-ed9042bcd12d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--596945a2-069f-5365-ae3f-77af55519e02",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8d65c27d-6d91-5fff-920e-48585f36602e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='244d81fd9908cd17815501d4edadeb1baf1c421aa25d8bd61c7cb481c939540e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5842fba7-35b6-54ee-8fa4-49bf9ba34e73",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8d65c27d-6d91-5fff-920e-48585f36602e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--05437595-69a5-5f04-a0c2-3caca3784537",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='2525d1e427a9983b0b4ca0906a4b44ffb9814b23d53fd8a2e3ab6512b027c733']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bfb5bd0a-be4f-5139-b231-d10e0c58ae64",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--05437595-69a5-5f04-a0c2-3caca3784537",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--45f88672-3f60-5659-9406-2cc83068d1f4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='26a2268281e8043125ef72b92f8980b42912048753d56894bc378fb54c7c188a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--20b4e946-356c-53af-abe9-a10ddf061edc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--45f88672-3f60-5659-9406-2cc83068d1f4",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--af661007-7c49-595f-b89b-8e1e9b4a7f48",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='2f5800c50cdeb74b9c4e99a69a3d2da50a48333ea86008adb534e8e8fde8fddc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0953ace9-2565-5b7b-9ad8-f03f68310508",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--af661007-7c49-595f-b89b-8e1e9b4a7f48",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c27c1d8b-053e-58c9-9489-585d52413190",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='310ee72debb75cef10f93e7a482873da09ac82814a293a1b9f311b2b656527f3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4fcb6015-85d0-598d-831b-dc5ccb2704ec",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c27c1d8b-053e-58c9-9489-585d52413190",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2afc7c8f-ac7f-5ec8-bff3-1b1a693041e3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='31366f1d30c23aaabccc7c36ac666b0f30bfdab4ef8193436c8b91bdee8e4c5b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1e5365eb-2753-50fc-8b99-b9bd6173864c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2afc7c8f-ac7f-5ec8-bff3-1b1a693041e3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d9430e90-cfe3-533d-8114-2a655385895c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='356133b59743c421d18950cc41beef70f30e2ac36fe52ac04b4f24f3c6e78bd9']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7332b6e9-1a4f-5ca6-b2f2-abb9c040a70b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d9430e90-cfe3-533d-8114-2a655385895c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--38b96652-c15e-5f60-b2bb-e8efbefc5367",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='3e897bf904bc04b4a2d4e2263e84afd6c586e353a5f3e07517235305dd42d131']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e47cfcb9-c5b4-5b44-ab66-63436df2c3ef",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--38b96652-c15e-5f60-b2bb-e8efbefc5367",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d12aa99a-93d1-5a58-aa18-3d5a8db46741",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='4094807caf2883dcc36d072a5e5ba34e79e246edf86a878151c25a5d9f2621bc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e3736d00-151a-5853-b224-792e769353af",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d12aa99a-93d1-5a58-aa18-3d5a8db46741",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5299dc91-6f6a-5209-8b9a-f4ebb00e0adc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='47fb7c6c96b036ce50b6dca26157f6ac4d7b40c1059114b6b7d8eefa9c435eff']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--52ef09bf-bc5d-5bee-970c-ff239ab5fb1a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5299dc91-6f6a-5209-8b9a-f4ebb00e0adc",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--98374f5b-9c75-5cf3-bd78-6d5d074c2935",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='4ba499bca73b622891630df5dcddc26262acc5f5b5865f36332562c023de1b7c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--306409aa-4fb7-5ee8-ab59-004f8d68f319",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--98374f5b-9c75-5cf3-bd78-6d5d074c2935",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--13554fe2-5b1c-5b9e-90d2-bc47abfc1653",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='4eb570a7545ea3c3b0cfc7f0b8a395c1627e59222812ede69371105101943eb3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6571b375-6096-5915-bb55-4dfe66d606cb",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--13554fe2-5b1c-5b9e-90d2-bc47abfc1653",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ff373766-df44-500e-ad57-7183b70b4c38",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='4f257c74ad1250536a3919baa2ba034ef315c1c5196f23c2e91ea3c9fea1e173']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0a2ade86-f4f3-54b3-9504-435b40f35301",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ff373766-df44-500e-ad57-7183b70b4c38",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bb1f1564-34ed-5c7f-82bd-efe14f472c4c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='4fa2ccd05dc0b3a8dfcb2f089eba1a8cbf90b858dcf8f45c5f3c4c2539e55c63']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3a8a1dd2-f2bf-5641-b4e4-cf6a3d6efae9",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--bb1f1564-34ed-5c7f-82bd-efe14f472c4c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7cd177c2-1687-5f8b-9f2e-3af70b2e1e6b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='512ede9f2fa794907999f3c26165557fdfd383b7aad71ba022ce2c8ba6c0019d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--95544f63-5bd0-5747-a5cf-ae3090596de7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7cd177c2-1687-5f8b-9f2e-3af70b2e1e6b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d7c62dcd-65d4-529b-a805-cdb3fb81ad82",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='51e5372028f8a61922bcbc94f90fd1285e6895a4a7dffc93447b4bc6b17d045c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9ee1f7be-c818-507e-a5ee-3acc358bb54e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d7c62dcd-65d4-529b-a805-cdb3fb81ad82",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--67b43e8c-dff6-5f7f-a6b5-a9473a288c19",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='52132a82dd59c2f3585ae5307d0260cd5e5b8059fee6f9b5e2e41dd61cf6a5d9']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--62c7c8d2-ebcd-57c1-8822-71c4c561fc54",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--67b43e8c-dff6-5f7f-a6b5-a9473a288c19",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--202020e1-3db0-56ed-b933-115dc84dfd3b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='527dfcb599a8700cb6ee1e875ef2ee64fbd95d1d7a5dbd35e9093b266e53243e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a6b4e72b-4fa1-5499-a035-af5d79cd50c7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--202020e1-3db0-56ed-b933-115dc84dfd3b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--67adcb3d-ede8-5f7d-98c4-9c0206f5f7e5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='555b3ec45eb3c4b1fa56ba8f616ef4466288b7873f0f7459785b6b803d50c2a7']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa89c0a9-9fef-5ade-a799-4ad209ddf8c1",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--67adcb3d-ede8-5f7d-98c4-9c0206f5f7e5",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--90204fcb-29ad-5ed7-98ee-88f4ef6ecf44",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='55cdb483b6d06bb4693170bef9472605590741e3d8f32301faa62467c4204139']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e443297d-470e-5cd2-8b09-07a74de89378",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--90204fcb-29ad-5ed7-98ee-88f4ef6ecf44",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--93afbd1e-627b-5cf6-a659-964aab393c87",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='582ea95aa93bf99297827501222c8b025a7e414aa1327db81f01ed1aa91537c6']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1da92971-42fe-5f11-acfa-b46ef5c5a25f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--93afbd1e-627b-5cf6-a659-964aab393c87",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ccdb51d3-5a5d-5453-871b-55bb443d0c29",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='586712891c7116050ead21e5e9cc27154991ffa647bc76e7512c093e430e3619']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1c2dab80-feba-5ec4-a14d-19c5e9e6dea7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ccdb51d3-5a5d-5453-871b-55bb443d0c29",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--20fb6265-14db-5309-b25e-15e783ee529c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='58ac130a8ebb09e37592ac69841483edc5695d1545b1f04f23d5b760ac17cd94']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--11be57f5-c3f3-5c08-9cc2-2064e02995dd",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--20fb6265-14db-5309-b25e-15e783ee529c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1634ae5e-e12f-50fd-a46d-2ceaaaeb8755",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='5a4e86bbcf0ebc455d2995db225d9ad682e9b37b6bad472a604a462099d988bd']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c85b6ed4-e8a9-5fe3-b876-8868ed838a88",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1634ae5e-e12f-50fd-a46d-2ceaaaeb8755",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3d2b35ac-1232-5bfc-bb74-f1eec96ddf8a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='5aaaf972c8bf39a98f2748e526de3cc0370ba831997d7d9765cdaba599645c0d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3aeaadf3-e108-5fef-8815-fb28d1c597e5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3d2b35ac-1232-5bfc-bb74-f1eec96ddf8a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--27fc1b54-0aeb-5799-89ad-2dbebc64c24e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='5e34d022f29594a0ded9f09a84a5ef633cf503ee94a10aa3112049485cb66701']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--70e1479f-305f-5dd4-b61b-2592af44b062",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--27fc1b54-0aeb-5799-89ad-2dbebc64c24e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a37ba882-6ab2-5b6d-a982-98ff4b8e4c14",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6101d1e1811db052f869f7eb3402dad28da7e92103d4a44ee43f95846a075012']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--42e2d1dd-734f-52fd-add7-64f7e0af3bd2",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a37ba882-6ab2-5b6d-a982-98ff4b8e4c14",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f0041fb9-3d54-53ae-a5fb-66957e0e2523",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='624a39f076a0b31bada0b1a5a71a58cf486a10b557735cc3e36f045e517c5528']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0dab15e0-42c7-5823-be9b-09e837becca4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f0041fb9-3d54-53ae-a5fb-66957e0e2523",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a1ced5d1-b27f-5772-82b1-474018295ac3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='676cb2d0a60403afc06cea1b572cb7261f706365fac65621b5a4907893e7ac0d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0231c2f0-61b0-53d8-bb32-68760439aeff",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a1ced5d1-b27f-5772-82b1-474018295ac3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c45a043a-d500-5c5e-b658-2590d24e05ca",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='67a76876a6e08b9a78f5f1b8911b700090872a4f040c364a4667aaf6232b86cb']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7d9d4e13-48a3-5aa1-b11b-90aa38959eed",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c45a043a-d500-5c5e-b658-2590d24e05ca",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8f972964-5aad-5a5c-ae3d-4a046c4721e0",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='67e58b7298ca1a0b985e4f48b66840a2b134484acca0403de25ecb3e5f6fb6be']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--332df11c-0b62-5a29-a7ee-fd36d415ae4e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8f972964-5aad-5a5c-ae3d-4a046c4721e0",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0ade796e-ac6f-5e7d-bcee-2459d2da4410",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6844ce1539014571360495c6fb50965e813c2721663bdd40d577d9e5163773c6']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--960dd2d1-5965-5621-b8b8-b5f27ae3bb55",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0ade796e-ac6f-5e7d-bcee-2459d2da4410",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--98338d54-3618-5fc3-af27-8c63aafd011f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='69fb412d697c8788d8d864be990714b7320dd69f1dd6397dab7e3eb34c1ace25']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--52d7a234-63f3-5923-8b18-d3c56c32dc68",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--98338d54-3618-5fc3-af27-8c63aafd011f",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cd2959ea-41a4-5698-843d-7679be431f31",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6a6b8d000471da23ab0b4c9d5861d50d118827fe4ccd060bdb1aae8313b75c26']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1415e9a8-b19d-587e-9b08-fb8beaf1b9e8",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cd2959ea-41a4-5698-843d-7679be431f31",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e5c2f19c-1897-5ed5-8a3e-ffbc1e96b9ce",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6ae94ce710016d86ed7457236deef2c4c51478587f3609b6e827a348828b3931']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a82907dd-3256-59b4-8706-f1701236817a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e5c2f19c-1897-5ed5-8a3e-ffbc1e96b9ce",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0c1727ce-6f7d-5e85-a007-8f397ff9c31e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6bba64fa9e8a7b11cb2476cd071de08986db44b0783eff211c68fa5594ef8143']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8d4ebdcb-3d97-5c0f-8ce1-c8ff7bf9f459",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0c1727ce-6f7d-5e85-a007-8f397ff9c31e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--63daee35-7856-5f77-ad76-d5a7b2e494d1",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6d0b751bd996229cf446c3f04cd5b98f4582581de037464674e3148b2ac4078b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b81cf4e5-d7fc-5900-8ef1-6747b2c005ca",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--63daee35-7856-5f77-ad76-d5a7b2e494d1",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bd442fe7-06fa-5b78-a3c4-622017da2ec3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6f03642e6543d0a80c569029806263e05ed0c8bd8f9522fdd39ea953cee69b64']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0106a557-f3a8-50c7-a908-4e4323981395",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--bd442fe7-06fa-5b78-a3c4-622017da2ec3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f33e2950-41de-5106-9adb-85e67a6e0ec1",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='6f9832ebb4c3054bee4a6ce5ccb69c00e2020053e1308353343097e6a4041109']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--913249d3-62e0-502f-b39e-5b8c2d4888c4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f33e2950-41de-5106-9adb-85e67a6e0ec1",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4af5a76f-1f6c-5933-a0a5-d57de746bbff",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='702261ba38b57ecc3a5407fed28b2f0611a74c2ec0c116aea4f9e6def0899aed']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1423b712-6616-5abc-849a-71ee420c5a39",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4af5a76f-1f6c-5933-a0a5-d57de746bbff",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6aa81ffa-5ff0-5f2a-af8e-41a49e34025d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='722bd2d7fcf0cf98ccc14c1f520aeebfbf8a8207e37cb04e56acdb1f73dbe700']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b6f86f15-dabb-5f2e-92ef-e9afc6e42371",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6aa81ffa-5ff0-5f2a-af8e-41a49e34025d",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0069abdf-9bb7-5a02-b6bd-5ae765e3807b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='72b4a6d60888acc214918d08994190ac2563e2cfe75be49730c576d2633e53dd']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--71e55dee-2fbd-5a8a-8feb-ec2660c1a408",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0069abdf-9bb7-5a02-b6bd-5ae765e3807b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e7d226f2-f59b-5855-830a-e2b257811e8c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='74771c9abd36762731e0824fdd2c43fc358bb724314d57f8c0f291d7070eb656']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1a75c6b9-a8b2-5dd4-a189-fdf5afa9e7bc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e7d226f2-f59b-5855-830a-e2b257811e8c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--11cb2b5c-1eca-59a0-852a-9ee2ab2baefb",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='752c1cfe783ed343e470ab95a4843a23872cdc98b7d3ed5633dd6c881c071a14']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9d4ce90b-af12-5a62-8770-40311a594639",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--11cb2b5c-1eca-59a0-852a-9ee2ab2baefb",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4927e0d6-5cfa-5d82-9d01-962e8374b15e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='75dd4fb011ed598374a46fc0d9c0d1d64a298341c34afc83a56a6983cfd27764']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--22d9b3f8-558d-500b-91b5-2e7ff1c689be",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4927e0d6-5cfa-5d82-9d01-962e8374b15e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--aa9a88a4-45ef-5b7b-ba65-5a78a79f260e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='76c59b46a905e40412584e861e0418ea3e7f4469720019da940dee68039dcf85']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fe951d55-4f0b-57fd-a184-4945bdd8dc40",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--aa9a88a4-45ef-5b7b-ba65-5a78a79f260e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2fdb8fe0-346a-572d-b9ce-5d4784f878ee",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='79e5be731264772458094ecc3a5f0b43f87a52f0bea15f1ecf42ab90b8a9edb5']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--45f190be-97bb-525d-90f4-d4de815a9121",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2fdb8fe0-346a-572d-b9ce-5d4784f878ee",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4b6a077e-9007-5070-999f-2da069c9f8b7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='7ac974899e8e05aaacd417577c97e382d5e8c5f7f4a85632cffb47ec2f6ae4e0']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c4a96cba-2cc8-5869-a837-7b84a94f3975",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4b6a077e-9007-5070-999f-2da069c9f8b7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ee975d96-c4d9-51a7-ac6e-5278645c2f08",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='81fbae44ec756284cd1e02d38b5aeaec0d691c607a2be801cfaab7962ed9c81e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4a0b7ad6-3aa8-5eeb-b10d-22931159ecd6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ee975d96-c4d9-51a7-ac6e-5278645c2f08",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c50889ca-9b8d-56f1-9a28-2586569b59cb",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='8644fe264163f1b971d75b1e157ee45ad0e229ecb70284c991d07ce460962829']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b7baf8f8-436e-55e6-a9a2-137b631beba7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c50889ca-9b8d-56f1-9a28-2586569b59cb",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--54c0dd7c-8572-5b85-9d97-1b15859921e7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='8b09a9802d1d682668ccc3156d0921994c84b918807b3379d105754bf7062e43']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--222b54b4-3435-5d45-95a3-aff9ea3b3e6c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--54c0dd7c-8572-5b85-9d97-1b15859921e7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4c1534c1-daae-564c-b4f0-05d196793113",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='8f09274e808e0063d51f34cac82a5770b3df30c792e426da2f6a80657f27affc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a20b4ee3-ebf4-5be1-8baf-8d1dd03631e4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4c1534c1-daae-564c-b4f0-05d196793113",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--242ee5a7-0136-5fc2-b514-1dd0cc50b230",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='900e71c59e3608472383ec4c255b1a54f96df8e2b69051f770753ee57f9a995d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dd8be2f6-e866-541d-9b57-f75596140722",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--242ee5a7-0136-5fc2-b514-1dd0cc50b230",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--73f612cb-2a40-5027-a616-160dfac840bd",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='90de7721693d3c5ffc061a98d392a717911b488b9de8583a92153fbbc32c03b7']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e8c53f6c-d0c1-508a-89df-ea3c7acce643",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--73f612cb-2a40-5027-a616-160dfac840bd",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fe70d018-0d06-50db-b963-11fabdc0d234",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='9286b69febddf2e6240ce739d5814ad696f1589635802904f7213bc98cae97f8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0264a1c4-bc17-5e33-8e81-ec756d21ac34",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fe70d018-0d06-50db-b963-11fabdc0d234",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6d5bf379-0eb1-516f-8c6b-4e20ac655d1f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='97a0497de585d3be6ec75064ab3bd0979cd85561193c1f0669ccf4db31330687']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c12228f4-4bbc-5bc4-8cd7-6969607e4118",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6d5bf379-0eb1-516f-8c6b-4e20ac655d1f",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e4b9c8ad-dedb-565b-998e-70256ae3db36",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='998a7ed1572ad9dc11375bc25294e1954e606b7cff9fabc5c120713e597cd274']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3c62944b-2a52-5173-93d0-48eee64cbdff",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e4b9c8ad-dedb-565b-998e-70256ae3db36",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f652f3ac-f71d-56e6-9b83-4c829412e634",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='9ac15bfa25104479c36580d662813ad4ac33054eecbca36b17e06a1315e1a11b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1d85dabb-0efb-5864-b598-269f1893b94e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f652f3ac-f71d-56e6-9b83-4c829412e634",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--037608da-a50b-5b05-bc64-6217b3460c8e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='9c35cec369ed9b50c4f0785d508e146d2d040035237f9c0eed8926d481880f73']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--086100b1-7b59-56ae-acf6-9d3e5ed12b33",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--037608da-a50b-5b05-bc64-6217b3460c8e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7023d8a6-d9be-5e35-a9af-99c6e63c1b42",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='a1e457c52eab430c20d48f2ac476e080386313f16efb135a0471902cf68ce475']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--be411b8d-2534-5556-b6fc-38832135bab1",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7023d8a6-d9be-5e35-a9af-99c6e63c1b42",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--61101bda-7ee0-53ec-bb95-79b9e3220191",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='a58b49e3afc235523dffcd75c0879a40734adbdd47f76d06f0edcb50290caffa']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7cf53c4a-8077-5d7f-98b3-beacf8118138",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--61101bda-7ee0-53ec-bb95-79b9e3220191",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d49ef58b-2d4b-50ad-9103-7073765f489e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='a764d73795abe47ae640ba09999a18c47b5340e5ecc7b897afebf34f3f37638f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7c98751d-c6ab-5373-bc89-4fc73b0cbd6f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d49ef58b-2d4b-50ad-9103-7073765f489e",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a045985c-d6ec-56b3-929d-5b17b2266b2b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='a892f1ef2e530d67bf948a48c734da3f27718eb8b883ca0b686ddb0a81071731']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f1eb8ce5-5b16-5e7a-a2ec-5f63dce5e9e5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a045985c-d6ec-56b3-929d-5b17b2266b2b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6eb3af12-3114-5675-a321-dafc6172d56c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='aa56f350882ce63429c6626567487b041f06168bb60f4fc371a262eabadfa660']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d478a136-39fe-5e0a-a10f-86b2cbdc8a15",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6eb3af12-3114-5675-a321-dafc6172d56c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7a3ab47f-75df-5378-ad43-e4caa017baab",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='aecfbfd7b5862c203ba7c66ca360f7d1a01e5a28ea5a636b9add3eac0a2c85a8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f6bf95b6-cf89-5297-84e4-60e84974ade4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7a3ab47f-75df-5378-ad43-e4caa017baab",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9b97de41-0462-5dc0-9dbb-4913b1436442",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='b2fe0bd513bc139bacc29187420628d586605478ca3fe3f9f593d1c440957564']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b08e1429-1d81-5871-8c6b-80d44420c9db",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9b97de41-0462-5dc0-9dbb-4913b1436442",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--258ee9d3-8312-5efc-9f61-25d3973c47e6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='b562551955331d73e5dad47655b739a5d5822e9fdbb94961a06fa51bf4a1735f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--afd5dd12-9b7a-5c23-a9d0-9d3b6dcf8f1e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--258ee9d3-8312-5efc-9f61-25d3973c47e6",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--819f1c34-4b2c-51a3-8bf2-2245aebec9c7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ba122b5fe33bed99bffae7fc41e8c6b6ec4feb7e257fc6045e22be542e143d87']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3069e9c5-15f3-5f80-ab50-186466022592",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--819f1c34-4b2c-51a3-8bf2-2245aebec9c7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ffaf616a-3d4e-5310-b221-39291451b232",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ba2c1ca7c53dcbf0d520e4f7e1af715bb1c51bd94e7d6856310cd8b688b8e608']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c7846ec8-0247-5e48-b8b7-cf75dc5c6eee",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ffaf616a-3d4e-5310-b221-39291451b232",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--25b1c1d6-ba68-5abb-b41f-fbb3b74053ad",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c080571d363b46b8396b413f4d2bd12259684d95570afc53e15d8f72ba7159bd']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--04ce82c5-25e3-5224-887b-4b48fa7d1815",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--25b1c1d6-ba68-5abb-b41f-fbb3b74053ad",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--507b6c73-9e82-5d5a-8b6b-d460ff059efd",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c08f76a058ad62b8553fe93f57c7d388951e17e3c5361e8ab5836a5c5d49c56b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c05118e5-2641-54ee-adf2-60688fcd57e9",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--507b6c73-9e82-5d5a-8b6b-d460ff059efd",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a37c2873-32a3-5859-94a4-be7b8944320a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c167b9f361e60317c00d4c62f523a5bd28b64a860379f001f8515ed15b555be2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b1cb57ad-e6b9-5ee4-b44f-9cd1c5dad39f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a37c2873-32a3-5859-94a4-be7b8944320a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e6da2ee8-5b94-53af-b5b7-22a17606b938",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c19cbc8b4ac4d8cfe1704c090c9c8585d3c5fa6708d25d60e4610aeb8b074167']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1c516d85-d2ae-5158-8609-47738f0ef284",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e6da2ee8-5b94-53af-b5b7-22a17606b938",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--55b3c0b9-d2aa-59d1-9b73-8f1d90e0abe7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c6199e175fb988cbbeacdf0f5acdf9ed83f5bdaae5c95b7a6c27ee72cd11b0b1']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa389b45-c6b7-5ea0-bad4-4b1e9464623e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--55b3c0b9-d2aa-59d1-9b73-8f1d90e0abe7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2f14acaa-9cae-59c8-a3a6-88aac324a88b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='c99139b0053c4c698ea0246d26d747f2a984c7aba4613da818ecd9f97899ef3a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5c5a202d-4d9c-5afd-afa2-8f5d6240fd53",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2f14acaa-9cae-59c8-a3a6-88aac324a88b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6ce7ddb1-7339-5c70-bc72-39e0b9300464",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ce5299f747648c192ba3889bdfa79641fb3298bda568b159cd59abfe1f2e7c56']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4972231d-3b41-5bc5-9996-0cc96680e014",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6ce7ddb1-7339-5c70-bc72-39e0b9300464",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2881107c-3107-5a0e-93bc-9dcd43af6c04",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='cee907c40ab5b20ee6ee235e433134042b3803e9e3e84c3e2d3211989799098c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ce30a162-da0f-5756-8c45-f08ac68e7b30",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2881107c-3107-5a0e-93bc-9dcd43af6c04",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4f223b0e-7f53-5e87-ad11-dfc770b13ba3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d41933fa401b63a619da38ebdd7d0251c753b0b7c735d6716f08dafc8a511531']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa2d7b70-002a-59c2-91e3-27491d31182c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4f223b0e-7f53-5e87-ad11-dfc770b13ba3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--95f12041-2a76-56d8-bf18-19f66411e4d8",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d55057cd9110d12a192281356f06b94f342b9febb305cf0a5898a7e6af40758f']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7062c87a-cac6-572c-89b2-0d554838dad3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--95f12041-2a76-56d8-bf18-19f66411e4d8",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4f162e62-0b1a-50c5-bff3-0e40e162860f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d62368b7e4307aa3b5d6faad27c36bc8b6607ab82ad0f038f27b4106ab2d0c67']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--72d340fc-13b6-5dea-924b-4fc8bf0a9ce6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4f162e62-0b1a-50c5-bff3-0e40e162860f",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--02a69535-8e76-5e2a-92a0-3b106da277c5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d6dfebcf1b44f43a07978a09f2016cab656ffe9496025f17bdb21cc6ee31b6c2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7f294a42-f1f7-54ad-9c26-3c73b8404268",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--02a69535-8e76-5e2a-92a0-3b106da277c5",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7de43159-b901-5735-ad6e-41655762cf60",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d77017ba77175b8d0af11f0407abe3e3dc1f08c4010b483465a80f2cb1783887']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--32622b04-89fb-5ccb-bf8d-c531d8c9c70d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7de43159-b901-5735-ad6e-41655762cf60",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6d2febe4-8521-57df-bb93-4a6d7e431c1a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d8b3327efe0c98be433a7a73591facb031fadcad747ad99e4ac3ccd0e6751290']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--84b341b5-1c15-5409-b9df-0e8b8b449d8e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6d2febe4-8521-57df-bb93-4a6d7e431c1a",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2f351655-7007-594a-b668-26ad7e104c07",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d953e4f1212ba1a078f08d28889021ccc6b34507ee5b35e1c50407e03230b2e3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b43e5be8-b4ba-578f-a49f-35cacd7b595c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2f351655-7007-594a-b668-26ad7e104c07",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9959a840-14e5-5472-b605-63cf6765e7a7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d95508907b4079c620ea71b985da36c056d96668555ee714e6c8d89a20801d73']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--aa853935-c14f-5158-82c2-e028f9953c20",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9959a840-14e5-5472-b605-63cf6765e7a7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8338eb59-330a-5ba5-a2c6-58fdec8bae03",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d9ddf328b6151bb6e2a74cd95c7153af969059ad0465dc3539a62a8069924a38']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--be88669b-fa7c-5d62-a31e-074ec8e50eb8",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8338eb59-330a-5ba5-a2c6-58fdec8bae03",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e258a684-7b71-5688-92b8-1ae46575cbcb",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='d9f4882f3581454a7e95b505795b946eeef4ffeb5997ffc545883de70fc2569c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--74e59f9f-3304-5231-b78b-84e4dd41fa7b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e258a684-7b71-5688-92b8-1ae46575cbcb",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8d0f7819-e78b-5eaf-9777-667e9854e3c5",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='dc0477d8bb664eee64a754d11698e8bb75001d647446bf0bba4b50d60a03c064']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--37250dc4-25d3-514d-9d84-4de704f1d37d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8d0f7819-e78b-5eaf-9777-667e9854e3c5",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0d121ed1-263e-5af1-8c4e-b2c6062b0f59",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ddce0219923d152b8facd303f058a6286cf1f6924992b9fb9f5bf4d96436cc39']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9b95ff6a-b561-58cb-b582-bf13a26b0ab6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0d121ed1-263e-5af1-8c4e-b2c6062b0f59",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--06cbac6a-1afe-53c0-8adf-2c08578f0e37",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='defd8485659c3c0da339db434ad87069b7ee351b49f011536eeb1284b1f6ddc0']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--003569c8-c0fd-550d-88ef-536be798bc28",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--06cbac6a-1afe-53c0-8adf-2c08578f0e37",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ea8176c2-39f3-5422-bf2f-68cffa88dc92",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e0c5a6efe8c3e521555248bd2b1876fe08b8fff6f48194fca72dd7b1f09c4a98']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2fc2e96e-3d30-5f48-bd90-63f06ac3761d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ea8176c2-39f3-5422-bf2f-68cffa88dc92",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e57efefd-0d42-5bb3-8470-5c4f4e395dd4",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e0c94374706d468a00d294ca14dc9db2a0bdedbe530362632f1833fad4ae0da7']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1d60a053-0959-5833-a74d-f2aa51fe8c08",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e57efefd-0d42-5bb3-8470-5c4f4e395dd4",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--89d05602-eb45-5e0d-b8ca-09c618cb3844",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e0ed71b95a459126cef8c8d8627794ccb6aae93cc25a060bb8ee73b84c82a2dd']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3581cbbb-c414-57de-b58a-a707f27832a7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--89d05602-eb45-5e0d-b8ca-09c618cb3844",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--af8ed0f9-c6cc-560f-8c51-0b3329cb4020",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e1695f79089ca314410388feab854449ef73c408a2ca3533f4d2c4fb1ee93fa6']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--334c4c32-e4f1-5c9d-985c-64f50b856b93",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--af8ed0f9-c6cc-560f-8c51-0b3329cb4020",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--46997a35-c99b-5951-8a2f-fe5f87559741",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e5a9fdff900dd502e8f3dce52d2d1b69aa9afafb5094a28f9037e8770db0e63b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d214104b-4750-5f2e-a248-b47466d68d93",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--46997a35-c99b-5951-8a2f-fe5f87559741",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2ad23c32-1026-58b1-8b66-0be911ef3508",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='e6fd06228e30648d3fb2d475fb88c5b2fd029e7f48d8fd7c868dc42b5d22e0a4']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6b6fb981-e789-5e67-91a3-4e6363f9349c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2ad23c32-1026-58b1-8b66-0be911ef3508",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a006e712-e018-55ce-90cc-74948ed62f73",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ea1cdc335754601fb8de17bd77a423ed106ae16efd8649596c4c065254c9c13d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0b5ebe22-65fc-5a5f-89a3-239126b50fbc",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a006e712-e018-55ce-90cc-74948ed62f73",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--97bc42cf-18fa-5c9f-9878-2c225f417a38",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ec033c13f06bcccb3d35b46c56003a60516339419ccc75a3738bbcf7f83e52b8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--46bfc396-491d-5e7f-b9a4-bf4d3f60983a",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--97bc42cf-18fa-5c9f-9878-2c225f417a38",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3a66a03d-fbbc-54c9-862a-eab592eb5485",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ed194a01dfa25a0326210b2ae6a9409c5881bcee4869eda78411a8a00db3c1b8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ac71af9b-ae1b-508a-83fe-efc8891f07a6",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3a66a03d-fbbc-54c9-862a-eab592eb5485",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3f2b9a9c-c2ec-5901-b828-ccbb6a5546a7",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='edb533e4dece48c883f149b911c2042ff897205b8d8cb370586e54ae145b77b7']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d33a26c7-df88-5f0f-93d9-6a0f0b44a353",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3f2b9a9c-c2ec-5901-b828-ccbb6a5546a7",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a8a9465e-43e7-51cc-9df2-70364b95968c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='edf491f8e79321d4921cadb64e66faf404ad7e2bebbc4e509c37cf79fae09296']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0b1c72d2-f2b8-5862-bb15-fafa88b26100",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a8a9465e-43e7-51cc-9df2-70364b95968c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--04503d9c-168a-5f15-b2f3-b6c2d3c3255c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='eea910a9dc6676f5e531ad50846120756e418fb5c2c3228cb228e948a5ad52e4']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ea52ec78-8b53-56ae-90ac-adba8023b0ec",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--04503d9c-168a-5f15-b2f3-b6c2d3c3255c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--96b9e789-43f3-55bf-bf4a-a41b81feb7c3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ef926c1df4d73c91def24e086816448f7bdce7fa58f86ae13f588a0ebc17c4fc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2a20305b-7eb2-51c9-8cd0-ac582abff351",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--96b9e789-43f3-55bf-bf4a-a41b81feb7c3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--82ef6e44-6dc8-5d42-924c-683e611d42de",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f4e0c62bce2ad484f42039f23614746032fd88f1319c88e7fa86789da3f271a0']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cb66efaa-32b9-51db-985a-839d53cb157e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--82ef6e44-6dc8-5d42-924c-683e611d42de",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cc23f015-13f5-5330-aa3c-0c4aa6eafeab",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f574638ecd902b9cb7f2d953355ffc620c75a2b1c18d7969620d73b7c93f235b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e391401e-49c8-594f-bd88-961232907749",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cc23f015-13f5-5330-aa3c-0c4aa6eafeab",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cf134de5-565d-598e-afce-4fbe612fc47b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f5c30c7628c9591190ebd779042b73f9fa4cb8e8ee252e77fccaf5049c9e7002']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4744dad3-66b2-56f3-bb38-2e0495b1cc69",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cf134de5-565d-598e-afce-4fbe612fc47b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a3885b9c-a266-574f-8fd6-8d94718542e3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f76b13040c634f82a8332ff9443d84c89a5bced51ae9adad7fd15c05fadb4324']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b88617b5-d4c4-5720-be3b-ccb66b1295e3",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a3885b9c-a266-574f-8fd6-8d94718542e3",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--688044c7-8117-5bf1-9fc3-6037873cce95",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f82693d76c09d7b5058f68c6528f89a342d9cfa0255da4cf2e670d07baefbfce']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d8e18e97-f41a-5f0e-bb54-88663c925d4d",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--688044c7-8117-5bf1-9fc3-6037873cce95",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--92d58586-9c8b-5bcb-8e82-48d8e0dd7250",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='f9bdd1e45acd475f040358ad2c9ad6fdd304f16c7a5dbd3807c6dc154c2b978d']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e10ab989-4c32-53c1-8c5b-7ef6b5084a5e",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--92d58586-9c8b-5bcb-8e82-48d8e0dd7250",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c9090390-943b-5052-aa2e-d4b14653421b",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='fac3b6d782dcbe2bc1788796255c8152b8f2910aa0a2292c7c2f71e0c8170ad3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3d50ef73-eae5-5770-bc67-768aad757f61",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c9090390-943b-5052-aa2e-d4b14653421b",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8219386f-0a9d-53be-b7c3-23c91afde15c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='fe13b8d33c79283ee6511fbd3549c698272cc57271f200d25c226ee72a38b277']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cb9c1b90-9d09-5895-afb4-998035e8269f",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8219386f-0a9d-53be-b7c3-23c91afde15c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6552cb41-f13f-5b47-a661-3a158cc56925",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='fe54cf73ca27273175c5b4a35ba823a82c331b828bcc636bfd645408e0301096']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--89a2a2ce-b94d-56b8-8819-05fdc6d2f0f8",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6552cb41-f13f-5b47-a661-3a158cc56925",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b06cf3fe-0e35-55f4-bb33-eefa79433c6c",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.sha256='ffbffbd3f9eb25da0342a02ff3d09f65c6d517d77c9e113dcb4c9ee9b8e3109b']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-05-26T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1ed898bd-b2c8-5ad3-b884-eed450f54501",
+            "created": "2026-05-26T00:00:00.000Z",
+            "modified": "2026-05-26T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b06cf3fe-0e35-55f4-bb33-eefa79433c6c",
+            "target_ref": "malware--6aa1a94d-782d-51d5-8899-f7d9c9eb1745"
+        }
+    ]
+}

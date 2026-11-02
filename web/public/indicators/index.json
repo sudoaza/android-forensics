@@ -1,0 +1,137 @@
+{
+  "pinned_at": "2026-09-01T16:22:32.907Z",
+  "upstream": "https://github.com/mvt-project/mvt-indicators",
+  "commit": "b22ddf05e1a31e7732b8895676987c5c3482ef65",
+  "license": "MIT",
+  "license_file": "LICENSE",
+  "note": "Pinned snapshot of third-party indicator data, fetched at build preparation time and served from this origin. The application makes no network request to any third party at run time.",
+  "total_indicators": 1617,
+  "bundles": [
+    {
+      "filename": "2022-06-23_rcs_lab/rcs.stix2",
+      "sha256": "db7473900259bc28ef20145c315af5bcb99451715703bc78563338f656b213b2",
+      "indicators": 40,
+      "collections": [
+        "RCSLab"
+      ],
+      "description": "RCSLab"
+    },
+    {
+      "filename": "2023-04-11_quadream/kingspawn.stix2",
+      "sha256": "fd47acd30388738083fb1e4e09ce7f2032885ec1217a5edc75ef8e71a81fee3f",
+      "indicators": 167,
+      "collections": [
+        "KingSpawn"
+      ],
+      "description": "KingSpawn"
+    },
+    {
+      "filename": "2023-06_01_operation_triangulation/operation_triangulation.stix2",
+      "sha256": "320a3aa1147f7c87b92db46a6c977c75d721d74e8266978dc74d9ed2ca7383f5",
+      "indicators": 112,
+      "collections": [
+        "OperationTriangulation"
+      ],
+      "description": "OperationTriangulation"
+    },
+    {
+      "filename": "2023-07-25_wyrmspy_dragonegg/wyrmspy_dragonegg.stix2",
+      "sha256": "b5495ca605b2150e76bb8322cfc6f484382db6070f806672f70edf3b0511e4f3",
+      "indicators": 53,
+      "collections": [
+        "WyrmSpy_DragonEgg"
+      ],
+      "description": "WyrmSpy_DragonEgg"
+    },
+    {
+      "filename": "2024-12-25_eaglemsgspy/eaglemsgspy.stix2",
+      "sha256": "033af3e26f764ace084d8ed3cdb6eeba833b1d9d1f2708fd65289e12a45136b5",
+      "indicators": 51,
+      "collections": [
+        "EagleMsgSpy"
+      ],
+      "description": "EagleMsgSpy"
+    },
+    {
+      "filename": "2026-03-03_coruna_cryptowaters/coruna.stix2",
+      "sha256": "653887014af347a107144036c9388af714f7a728661d6026dbe8b66db4acbfe4",
+      "indicators": 215,
+      "collections": [
+        "Coruna"
+      ],
+      "description": "Coruna"
+    },
+    {
+      "filename": "2026-03-30_darksword/darksword.stix2",
+      "sha256": "a694a8f3a37866ae30d72aab84fffd3a89d848406adfc0eac3237805b1c6826c",
+      "indicators": 43,
+      "collections": [
+        "DarkSword"
+      ],
+      "description": "DarkSword"
+    },
+    {
+      "filename": "2026-04-09_sio_spyrtacus/spyrtacus.stix2",
+      "sha256": "44a7f68629cfeb5952a646986f5ef24395656631d6cca636bf283c024714ad4e",
+      "indicators": 9,
+      "collections": [
+        "Spyrtacus"
+      ],
+      "description": "Spyrtacus"
+    },
+    {
+      "filename": "2026-04-23_ips_morpheus/morpheus.stix2",
+      "sha256": "fa327338e33b017f8633a33ddc2a0364a1ecfa8fd99b821e53a5c2e4cdb33094",
+      "indicators": 8,
+      "collections": [
+        "Morpheus"
+      ],
+      "description": "Morpheus"
+    },
+    {
+      "filename": "2026-05-26_btmob/btmob.stix2",
+      "sha256": "6bada3d46e6ac53019d80ccea991611125e8eefdd00b5bd0ea23ac48f2dca15a",
+      "indicators": 162,
+      "collections": [
+        "BTMOB"
+      ],
+      "description": "BTMOB"
+    },
+    {
+      "filename": "ResidentBat/residentbat.stix2",
+      "sha256": "d52ca6753a80578a25df2b907ae5dd3305b00e2345baa843d0c91dfac52c50c5",
+      "indicators": 48,
+      "collections": [
+        "ResidentBat"
+      ],
+      "description": "ResidentBat"
+    },
+    {
+      "filename": "candiru/candiru.stix2",
+      "sha256": "684f9e60da472ec938c7cd003adb3e3b97d29a0a43fed7565c9ef29c19bedb86",
+      "indicators": 125,
+      "collections": [
+        "Candiru"
+      ],
+      "description": "Candiru"
+    },
+    {
+      "filename": "cellebrite/cellebrite.stix2",
+      "sha256": "054436c35a1e715ff2ea55a9516364108239cde238afdd096b21c3da90f97d2a",
+      "indicators": 1,
+      "collections": [
+        "Cellebrite"
+      ],
+      "description": "Cellebrite"
+    },
+    {
+      "filename": "intellexa_predator/predator.stix2",
+      "sha256": "99938ba179216f73e54513c4c537e3951ae860bcc6eaa5a93055f4afbb689879",
+      "indicators": 583,
+      "collections": [
+        "Predator"
+      ],
+      "description": "Predator"
+    }
+  ]
+}

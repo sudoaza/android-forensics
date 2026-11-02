@@ -1,0 +1,40 @@
+{
+    "type": "bundle",
+    "id": "bundle--efbedcdb-d8e2-5ebb-83d0-91afa05a795c",
+    "objects": [
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--a3e96486-d98a-5490-8a6e-fd4bc0acad3f",
+            "created": "2026-01-22T00:00:00.000Z",
+            "modified": "2026-01-22T00:00:00.000Z",
+            "name": "Cellebrite",
+            "description": "IOCs for Cellebrite",
+            "is_family": false
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b1e0a5d6-7767-579b-9d62-2cc5a3713391",
+            "created": "2026-01-22T00:00:00.000Z",
+            "modified": "2026-01-22T00:00:00.000Z",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[app:id='com.client.appA']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-01-22T00:00:00.000Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--de7d55fe-a2d5-5352-9828-7a6843175aca",
+            "created": "2026-01-22T00:00:00.000Z",
+            "modified": "2026-01-22T00:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b1e0a5d6-7767-579b-9d62-2cc5a3713391",
+            "target_ref": "malware--a3e96486-d98a-5490-8a6e-fd4bc0acad3f"
+        }
+    ]
+}
